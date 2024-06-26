@@ -11,11 +11,10 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             NavigationStack {
-                Color(.systemOrange)
-                    .ignoresSafeArea()
                 VStack{
                     Text("Pick a Country")
-                        .font(.largeTitle)
+                        .font(.system(size: 40))
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .padding()
                     Spacer()
                     HStack{

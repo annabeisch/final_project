@@ -10,7 +10,8 @@ import SwiftUI
 struct topicsNE: View {
     var body: some View {
         Text("Topics")
-            .font(.largeTitle)
+            .font(.system(size: 40))
+            .fontWeight(.semibold)
         Spacer()
         Button("Culture") {
             /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
