@@ -12,6 +12,19 @@ struct topicsSE: View {
         Text("Topics")
             .font(.largeTitle)
         Spacer()
+        Button("Culture") {
+            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+        }
+        .buttonStyle(.borderedProminent)
+        Button("Food") {
+            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+        }
+        .buttonStyle(.borderedProminent)
+        Button("Businesses") {
+            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+        }
+        .buttonStyle(.borderedProminent)
+        Spacer()
     }
 }
 
