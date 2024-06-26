@@ -12,7 +12,9 @@ struct ContentView: View {
         ZStack{
             NavigationStack {
                 VStack(alignment: .center){
-                    Text("Pick a Country")
+                    Spacer()
+                        .frame(height: 30)
+                    Text("Pick a Region")
                         .font(.system(size: 50))
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .padding([.top, .leading, .trailing])

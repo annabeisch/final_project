@@ -9,32 +9,46 @@ import SwiftUI
 
 struct topicsSE: View {
     var body: some View {
-        Text("Topics")
-            .font(.system(size: 60))
-            .fontWeight(.semibold)
-            .padding(.top)
-        Spacer()
-        Button("Culture") {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-        }
-        .padding(.bottom)
-        .buttonStyle(.borderedProminent)
-        .font(.system(size: 50))
-        Button("Food") {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-        }
-        .padding(.vertical)
-        .buttonStyle(.borderedProminent)
-        .font(.system(size: 50))
-        Button("Businesses") {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-        }
-        .padding(.vertical)
-        .buttonStyle(.borderedProminent)
-        .font(.system(size: 50))
-        Spacer()
-    }
-}
+        NavigationStack {
+            VStack {
+                Spacer()
+                    .frame(height: 30)
+                Text("Topics")
+                    .font(.system(size: 60))
+                    .fontWeight(.semibold)
+                Spacer()
+                NavigationLink(destination: cultureSE()) {
+                    Text("Culture")
+                        .padding()
+                        .background(.black)
+                        .foregroundColor(.white)
+                        .cornerRadius(15)
+                        .font(.system(size: 50))
+                        .padding()
+                } //close NavLink
+                NavigationLink(destination: foodSE()) {
+                    Text("Food")
+                        .padding()
+                        .background(.black)
+                        .foregroundColor(.white)
+                        .cornerRadius(15)
+                        .font(.system(size: 50))
+                        .padding()
+                } //close NavLink
+                NavigationLink(destination: businessesSE()) {
+                    Text("Businesses")
+                        .padding()
+                        .background(.black)
+                        .foregroundColor(.white)
+                        .cornerRadius(15)
+                        .font(.system(size: 50))
+                        .padding()
+                } //close NavLink
+                Spacer()
+            } //close VStack
+        } //close NavStack
+    } //close body
+} //close struct
 
 #Preview {
     topicsSE()
