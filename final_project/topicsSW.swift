@@ -11,8 +11,6 @@ struct topicsSW: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Spacer()
-                    .frame(height: 30)
                 Text("Topics")
                     .font(.system(size: 60))
                     .fontWeight(.semibold)

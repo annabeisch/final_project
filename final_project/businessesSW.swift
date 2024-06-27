@@ -1,5 +1,5 @@
 //
-//  businessesSE.swift
+//  businessesSW.swift
 //  final_project
 //
 //  Created by Scholar on 6/26/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct businessesSE: View {
+struct businessesSW: View {
     var body: some View {
         VStack {
             HStack{
@@ -24,7 +24,6 @@ struct businessesSE: View {
         } //closes VStack
     } //closes body
 } //closes struct
-
 #Preview {
-    businessesSE()
+    businessesSW()
 }
