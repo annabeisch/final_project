@@ -15,11 +15,13 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 VStack(alignment: .center){
                     Spacer()
-                        .frame(height: 30)
-                    Text("Pick a Region")
+                        .frame(height: 40)
+                    Text("Select a Region")
                         .font(.system(size: 50, weight: .bold, design: .serif))
+                        .foregroundColor(Color(hue: 0.1, saturation: 0.1, brightness: 0.2))
                         .padding([.top, .leading, .trailing])
                     Spacer()
+                        .frame(height: 90)
                     ZStack {
                         Image("continentAsia")
                             .aspectRatio(contentMode: .fit)
@@ -30,12 +32,14 @@ struct ContentView: View {
                                     Text("📍NW")
                                 }
                                 .font(.system(size: 25, weight: .bold, design: .serif))
+                                .foregroundColor(Color(hue: 0.1, saturation: 0.1, brightness: 0.3))
                                 Spacer()
                                     .frame(width: 60)
                                 NavigationLink(destination: topicsNE()) {
                                     Text("📍NE")
                                 }
                                 .font(.system(size: 25, weight: .bold, design: .serif))
+                                .foregroundColor(Color(hue: 0.1, saturation: 0.1, brightness: 0.3))
                             }
                             Spacer()
                                 .frame(height: 70)
@@ -44,12 +48,14 @@ struct ContentView: View {
                                     Text("📍SW")
                                 }
                                 .font(.system(size: 25, weight: .bold, design: .serif))
+                                .foregroundColor(Color(hue: 0.1, saturation: 0.1, brightness: 0.3))
                                 Spacer()
                                     .frame(width: 70)
                                 NavigationLink(destination: topicsSE()) {
                                     Text("📍SE")
                                 }
                                 .font(.system(size: 25, weight: .bold, design: .serif))
+                                .foregroundColor(Color(hue: 0.1, saturation: 0.1, brightness: 0.3))
                                 Spacer()
                                     .frame(width: 60)
                             }//closes HStack
@@ -59,13 +65,17 @@ struct ContentView: View {
                     } //closes ZStack
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 40)
                     NavigationLink(destination: meet_the_creators()) {
-                        Text("Meet the Creators").underline()
+                        Text("Meet the Creators")
                             .multilineTextAlignment(.center)
+                            .font(.system(size: 17, weight: .thin, design: .serif))
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color(hue: 0.1, saturation: 0.1, brightness: 0.5))
+                            .cornerRadius(15)
+                            .padding()
                     }
-                    .font(.system(size: 17, weight: .thin, design: .serif))
-                    .foregroundColor(.black)
                 }//closes VStack
                 .navigationBarHidden(true)
             }//closes ZStack

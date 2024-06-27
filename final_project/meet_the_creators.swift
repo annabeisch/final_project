@@ -18,12 +18,12 @@ struct meet_the_creators: View {
                                 .font(.system(size: 40))
                         }
                         Spacer()
-                            .frame(width: 55)
+                            .frame(width: 10)
                         Text("Meet the Creators")
                             .font(.system(size: 40))
                             .foregroundColor(Color.white)
                         Spacer()
-                            .frame(width: 80)
+                            .frame(width: 30)
                     }
                     HStack {
                         Image("bluey")

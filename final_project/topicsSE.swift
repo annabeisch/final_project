@@ -10,50 +10,55 @@ import SwiftUI
 struct topicsSE: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                HStack {
-                    NavigationLink(destination: ContentView()) {
-                        Text("⌂")
-                            .font(.system(size: 40))
+            ZStack {
+                Color(hue: 0.1, saturation: 0.1, brightness: 0.75)
+                    .ignoresSafeArea()
+                VStack {
+                    HStack {
+                        NavigationLink(destination: ContentView()) {
+                            Text("⌂")
+                                .font(.system(size: 60, weight: .bold, design: .serif))
+                        }
+                        Spacer()
+                            .frame(width: 55)
+                        Text("Topics")
+                            .font(.system(size: 60, weight: .semibold, design: .serif))
+                            .foregroundColor(Color(hue: 0.1, saturation: 0.1, brightness: 0.2))
+                            .padding([.top, .leading, .trailing])
+                        Spacer()
+                            .frame(width: 80)
                     }
                     Spacer()
-                        .frame(width: 70)
-                    Text("Topics")
-                        .font(.system(size: 60))
-                        .fontWeight(.semibold)
+                    NavigationLink(destination: cultureSE()) {
+                        Text("Culture")
+                            .font(.system(size: 50, weight: .light, design: .serif))
+                            .padding()
+                            .background(Color(hue: 0.1, saturation: 0.1, brightness: 0.2))
+                            .foregroundColor(.white)
+                            .cornerRadius(15)
+                            .padding()
+                    } //close NavLink
+                    NavigationLink(destination: foodSE()) {
+                        Text("Food")
+                            .font(.system(size: 50, weight: .light, design: .serif))
+                            .padding()
+                            .background(Color(hue: 0.1, saturation: 0.1, brightness: 0.2))
+                            .foregroundColor(.white)
+                            .cornerRadius(15)
+                            .padding()
+                    } //close NavLink
+                    NavigationLink(destination: businessesSE()) {
+                        Text("Businesses")
+                            .font(.system(size: 50, weight: .light, design: .serif))
+                            .padding()
+                            .background(Color(hue: 0.1, saturation: 0.1, brightness: 0.2))
+                            .foregroundColor(.white)
+                            .cornerRadius(15)
+                            .padding()
+                    } //close NavLink
                     Spacer()
-                        .frame(width: 95)
-                }
-                Spacer()
-                NavigationLink(destination: cultureSE()) {
-                    Text("Culture")
-                        .padding()
-                        .background(.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(15)
-                        .font(.system(size: 50))
-                        .padding()
-                } //close NavLink
-                NavigationLink(destination: foodSE()) {
-                    Text("Food")
-                        .padding()
-                        .background(.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(15)
-                        .font(.system(size: 50))
-                        .padding()
-                } //close NavLink
-                NavigationLink(destination: businessesSE()) {
-                    Text("Businesses")
-                        .padding()
-                        .background(.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(15)
-                        .font(.system(size: 50))
-                        .padding()
-                } //close NavLink
-                Spacer()
-            } //close VStack
+                } //close VStack
+            } //closes ZStack
             .navigationBarHidden(true)
         } //close NavStack
     } //close body
