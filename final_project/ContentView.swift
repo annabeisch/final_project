@@ -32,7 +32,7 @@ struct ContentView: View {
                     }//closes HStack
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     Spacer()
-                    NavigationLink(destination: creators()) {
+                    NavigationLink(destination: meet_the_creators()) {
                         Text("Meet the Creators")
                             .multilineTextAlignment(.center)
                     }//closes NavLink
@@ -41,7 +41,7 @@ struct ContentView: View {
             }//closes NavStack
         }//closes ZStack
     }//closes body
-    }//closes struct
+}//closes struct
     
     #Preview {
         ContentView()
