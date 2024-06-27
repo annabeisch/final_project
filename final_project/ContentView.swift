@@ -37,7 +37,7 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                     }//closes NavLink
                 }//closes VStack
-                
+                .navigationBarHidden(true)
             }//closes NavStack
         }//closes ZStack
     }//closes body

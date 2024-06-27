@@ -11,9 +11,19 @@ struct topicsSE: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Topics")
-                    .font(.system(size: 60))
-                    .fontWeight(.semibold)
+                HStack {
+                    NavigationLink(destination: ContentView()) {
+                        Text("⌂")
+                            .font(.system(size: 40))
+                    }
+                    Spacer()
+                        .frame(width: 70)
+                    Text("Topics")
+                        .font(.system(size: 60))
+                        .fontWeight(.semibold)
+                    Spacer()
+                        .frame(width: 95)
+                }
                 Spacer()
                 NavigationLink(destination: cultureSE()) {
                     Text("Culture")
@@ -44,6 +54,7 @@ struct topicsSE: View {
                 } //close NavLink
                 Spacer()
             } //close VStack
+            .navigationBarHidden(true)
         } //close NavStack
     } //close body
 } //close struct
