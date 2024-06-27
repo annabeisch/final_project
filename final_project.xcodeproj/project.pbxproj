@@ -16,9 +16,13 @@
 		BD4DA9AC2C2CC99900823450 /* cultureNE.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DA9AB2C2CC99900823450 /* cultureNE.swift */; };
 		BD4DA9AE2C2CC99E00823450 /* foodNE.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DA9AD2C2CC99E00823450 /* foodNE.swift */; };
 		BD4DA9B02C2CC9A500823450 /* businessesNE.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4DA9AF2C2CC9A500823450 /* businessesNE.swift */; };
+		BD8DE3DB2C2DFB200018DAEE /* topicsNW.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DE3DA2C2DFB200018DAEE /* topicsNW.swift */; };
+		BD8DE3DD2C2DFB290018DAEE /* cultureNW.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DE3DC2C2DFB290018DAEE /* cultureNW.swift */; };
+		BD8DE3DF2C2DFB300018DAEE /* foodNW.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DE3DE2C2DFB300018DAEE /* foodNW.swift */; };
+		BD8DE3E12C2DFB470018DAEE /* businessesNW.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DE3E02C2DFB470018DAEE /* businessesNW.swift */; };
+		BD8DE3E22C2DFD820018DAEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC320802C2B5B4F00CAD798 /* ContentView.swift */; };
 		BDBFC14D2C2DC9F5001712BA /* meet_the_creators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBFC14C2C2DC9F5001712BA /* meet_the_creators.swift */; };
 		BDC3207F2C2B5B4F00CAD798 /* final_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3207E2C2B5B4F00CAD798 /* final_projectApp.swift */; };
-		BDC320812C2B5B4F00CAD798 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC320802C2B5B4F00CAD798 /* ContentView.swift */; };
 		BDC320832C2B5B5C00CAD798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC320822C2B5B5C00CAD798 /* Assets.xcassets */; };
 		BDC320862C2B5B5C00CAD798 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC320852C2B5B5C00CAD798 /* Preview Assets.xcassets */; };
 		BDC320912C2B619000CAD798 /* topicsNE.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC320902C2B619000CAD798 /* topicsNE.swift */; };
@@ -36,6 +40,10 @@
 		BD4DA9AB2C2CC99900823450 /* cultureNE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cultureNE.swift; sourceTree = "<group>"; };
 		BD4DA9AD2C2CC99E00823450 /* foodNE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodNE.swift; sourceTree = "<group>"; };
 		BD4DA9AF2C2CC9A500823450 /* businessesNE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = businessesNE.swift; sourceTree = "<group>"; };
+		BD8DE3DA2C2DFB200018DAEE /* topicsNW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topicsNW.swift; sourceTree = "<group>"; };
+		BD8DE3DC2C2DFB290018DAEE /* cultureNW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cultureNW.swift; sourceTree = "<group>"; };
+		BD8DE3DE2C2DFB300018DAEE /* foodNW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodNW.swift; sourceTree = "<group>"; };
+		BD8DE3E02C2DFB470018DAEE /* businessesNW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = businessesNW.swift; sourceTree = "<group>"; };
 		BDBFC14C2C2DC9F5001712BA /* meet_the_creators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meet_the_creators.swift; sourceTree = "<group>"; };
 		BDC3207B2C2B5B4F00CAD798 /* final_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC3207E2C2B5B4F00CAD798 /* final_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = final_projectApp.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 				BD4DA9AB2C2CC99900823450 /* cultureNE.swift */,
 				BD4DA9AD2C2CC99E00823450 /* foodNE.swift */,
 				BD4DA9AF2C2CC9A500823450 /* businessesNE.swift */,
+				BD8DE3DA2C2DFB200018DAEE /* topicsNW.swift */,
+				BD8DE3DC2C2DFB290018DAEE /* cultureNW.swift */,
+				BD8DE3DE2C2DFB300018DAEE /* foodNW.swift */,
+				BD8DE3E02C2DFB470018DAEE /* businessesNW.swift */,
 				BDC320922C2B61B000CAD798 /* topicsSE.swift */,
 				BD4DA99F2C2CA7B500823450 /* cultureSE.swift */,
 				BD4DA9A12C2CA7C600823450 /* foodSE.swift */,
@@ -176,18 +188,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8DE3DB2C2DFB200018DAEE /* topicsNW.swift in Sources */,
+				BD8DE3E12C2DFB470018DAEE /* businessesNW.swift in Sources */,
 				BD4DA9A82C2CC98600823450 /* foodSW.swift in Sources */,
 				BD4DA9A02C2CA7B500823450 /* cultureSE.swift in Sources */,
 				BDC320932C2B61B000CAD798 /* topicsSE.swift in Sources */,
 				BD4DA9AA2C2CC98F00823450 /* businessesSW.swift in Sources */,
 				BD4DA9A62C2CC97E00823450 /* cultureSW.swift in Sources */,
-				BDC320812C2B5B4F00CAD798 /* ContentView.swift in Sources */,
+				BD8DE3DD2C2DFB290018DAEE /* cultureNW.swift in Sources */,
+				BD8DE3E22C2DFD820018DAEE /* ContentView.swift in Sources */,
 				BDBFC14D2C2DC9F5001712BA /* meet_the_creators.swift in Sources */,
 				BD4DA9A42C2CA7D300823450 /* businessesSE.swift in Sources */,
 				BDC320912C2B619000CAD798 /* topicsNE.swift in Sources */,
 				BDC3207F2C2B5B4F00CAD798 /* final_projectApp.swift in Sources */,
 				BD4DA9AE2C2CC99E00823450 /* foodNE.swift in Sources */,
 				BD4DA9B02C2CC9A500823450 /* businessesNE.swift in Sources */,
+				BD8DE3DF2C2DFB300018DAEE /* foodNW.swift in Sources */,
 				BDC320952C2B61BB00CAD798 /* topicsSW.swift in Sources */,
 				BD4DA9AC2C2CC99900823450 /* cultureNE.swift in Sources */,
 				BD4DA9A22C2CA7C600823450 /* foodSE.swift in Sources */,

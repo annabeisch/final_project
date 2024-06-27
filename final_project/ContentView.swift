@@ -9,41 +9,71 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack{
-            NavigationStack {
+        NavigationStack{
+            ZStack {
+                Color(hue: 0.1, saturation: 0.1, brightness: 0.75)
+                    .ignoresSafeArea()
                 VStack(alignment: .center){
                     Spacer()
                         .frame(height: 30)
                     Text("Pick a Region")
-                        .font(.system(size: 50))
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .font(.system(size: 50, weight: .bold, design: .serif))
                         .padding([.top, .leading, .trailing])
                     Spacer()
-                    HStack{
-                        NavigationLink(destination: topicsNE()) {
-                            Text("📍NE")
-                        }
-                        NavigationLink(destination: topicsSE()) {
-                            Text("📍SE")
-                        }
-                        NavigationLink(destination: topicsSW()) {
-                            Text("📍SW")
-                        }
-                    }//closes HStack
+                    ZStack {
+                        Image("continentAsia")
+                            .aspectRatio(contentMode: .fit)
+                            .shadow(radius: 20)
+                        VStack {
+                            HStack {
+                                NavigationLink(destination: topicsNW()) {
+                                    Text("📍NW")
+                                }
+                                .font(.system(size: 25, weight: .bold, design: .serif))
+                                Spacer()
+                                    .frame(width: 60)
+                                NavigationLink(destination: topicsNE()) {
+                                    Text("📍NE")
+                                }
+                                .font(.system(size: 25, weight: .bold, design: .serif))
+                            }
+                            Spacer()
+                                .frame(height: 70)
+                            HStack{
+                                NavigationLink(destination: topicsSW()) {
+                                    Text("📍SW")
+                                }
+                                .font(.system(size: 25, weight: .bold, design: .serif))
+                                Spacer()
+                                    .frame(width: 70)
+                                NavigationLink(destination: topicsSE()) {
+                                    Text("📍SE")
+                                }
+                                .font(.system(size: 25, weight: .bold, design: .serif))
+                                Spacer()
+                                    .frame(width: 60)
+                            }//closes HStack
+                            Spacer()
+                                .frame(height: 110)
+                        } //closes VStack
+                    } //closes ZStack
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     Spacer()
+                        .frame(height: 70)
                     NavigationLink(destination: meet_the_creators()) {
-                        Text("Meet the Creators")
+                        Text("Meet the Creators").underline()
                             .multilineTextAlignment(.center)
-                    }//closes NavLink
+                    }
+                    .font(.system(size: 17, weight: .thin, design: .serif))
+                    .foregroundColor(.black)
                 }//closes VStack
                 .navigationBarHidden(true)
-            }//closes NavStack
-        }//closes ZStack
+            }//closes ZStack
+        }//closes NavStack
     }//closes body
 }//closes struct
-    
-    #Preview {
-        ContentView()
-    }
+
+#Preview {
+    ContentView()
+}
 

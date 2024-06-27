@@ -20,7 +20,7 @@ struct meet_the_creators: View {
                         Spacer()
                             .frame(width: 55)
                         Text("Meet the Creators")
-                            .font(.title)
+                            .font(.system(size: 40))
                             .foregroundColor(Color.white)
                         Spacer()
                             .frame(width: 80)
