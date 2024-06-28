@@ -44,7 +44,7 @@ struct meet_the_creators: View {
                     .shadow(radius: 15)
                     .padding(.horizontal)
                     HStack {
-                        Text("Pictured here to represent Naila is her duck Duckling. Naila is seventeen years old and is going to be a first year at a CC.")
+                        Text("Pictured here to represent Naila is her duck Ducklan. Naila is seventeen years old and is going to be a first year at a CC.")
                             .multilineTextAlignment(.leading)
                             .font(.system(size: 18, weight: .regular, design: .default))
                         Image("ducklan")
