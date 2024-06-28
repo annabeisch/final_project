@@ -90,6 +90,7 @@ struct meet_the_creators: View {
                     .padding(.horizontal)
                 }
             }
+            .navigationBarHidden(true)
         }
     }
 }//closes struct
