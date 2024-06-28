@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             ZStack {
-                Color(hue: 0.1, saturation: 0.1, brightness: 0.75)
+                Color(hue: 0.1, saturation: 0.2, brightness: 0.75)
                     .ignoresSafeArea()
                 VStack(alignment: .center){
                     Spacer()

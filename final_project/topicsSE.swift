@@ -11,13 +11,14 @@ struct topicsSE: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color(hue: 0.1, saturation: 0.1, brightness: 0.75)
+                Color(hue: 0.1, saturation: 0.2, brightness: 0.75)
                     .ignoresSafeArea()
                 VStack {
                     HStack {
                         NavigationLink(destination: ContentView()) {
                             Text("⌂")
                                 .font(.system(size: 60, weight: .bold, design: .serif))
+                                .foregroundColor(Color(hue: 0.1, saturation: 0.1, brightness: 0.2))
                         }
                         Spacer()
                             .frame(width: 55)
